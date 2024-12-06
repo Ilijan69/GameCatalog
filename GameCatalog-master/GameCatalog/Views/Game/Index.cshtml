@@ -1,0 +1,28 @@
+﻿@model IEnumerable<GameCatalog.Models.Game>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header>
+    <h1>Game Catalog</h1>
+    <nav>
+        <!-- Search Form -->
+        <form class="searchbar" onsubmit="return false;">
+            <input id="searchInput"
+                   class="form-control mb-3"
+                   type="text"
+                   placeholder="Search games by name or manufacturer..."
+                   aria-label="Search" />
+        </form>
+    </nav>
+</header>
+
+<button class="add-game-button">
+    <a asp-action="Create">+</a>
+</button>
+<div id="gameList">
+    <!-- Render the game list using the partial view -->
+    @await Html.PartialAsync("_GameList", Model)
+</div>
+

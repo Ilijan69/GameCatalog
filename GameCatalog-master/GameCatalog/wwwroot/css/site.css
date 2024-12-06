@@ -1,0 +1,89 @@
+/* Set the background for the page */
+header {
+    background-color: #1a1a1a; /* Dark background color */
+    color: white; /* Light text color for contrast */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+    /* Optional: Adjust navigation bar or links in header */
+    header a {
+        color: #d1d1d1; /* Light gray for links */
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+        header a:hover {
+            color: #8a2be2; /* Purple color when hovering over the links */
+        }
+body {
+    background: linear-gradient(to bottom right, black, #2a0a57);
+    color: white; /* Default text color */
+    font-family: 'Arial', sans-serif; /* Ensure readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the game boxes and give them some spacing */
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Design for each game box */
+.game-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(138, 43, 226, 0.8); /* Glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    /* Hover effect for the boxes */
+    .game-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 0 25px rgba(186, 85, 211, 1); /* Stronger glow */
+    }
+
+    /* Style for game images */
+    .game-box img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    /* Buttons under each box */
+    .game-box button {
+        background: #8a2be2;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+        .game-box button:hover {
+            background: #a64efb; /* Lighter purple on hover */
+        }
+
+    /* Adjust text styles inside the box */
+    .game-box h3, .game-box p {
+        margin: 0 0 10px;
+        text-align: center;
+    }
+
+.searchbar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(+50%); /* Center it horizontally */
+}
+

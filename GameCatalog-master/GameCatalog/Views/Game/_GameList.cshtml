@@ -1,0 +1,12 @@
+﻿<div class="game-container">
+    @foreach (var game in Model)
+    {
+        <div class="game-box">
+            <img src="@game.ImageUrl" alt="@game.Name" />
+            <h3>@game.Name</h3>
+            <p>@game.Manufacturer</p>
+            <button onclick="location.href='@Url.Action("Details", new { id = game.Id })'">Details</button>
+            <button onclick="location.href='@Url.Action("Edit", new { id = game.Id })'">Edit</button>
+        </div>
+    }
+</div>
